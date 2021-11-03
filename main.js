@@ -220,4 +220,21 @@ function onMouseLeave() {
 }
 
 
+$(document).ready(function(){ $('.project-slide').slick({ dots: true, prevArrow: $('.prev'), nextArrow: $('.next'), infinite: false, speed: 300, slidesToShow: 3, slidesToScroll: 1 }); });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
