@@ -19,14 +19,13 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-
-   
-    
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Han+Sans&family=Hahmlet&family=Jua&family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="portfolio">
+
+      
       
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
@@ -37,13 +36,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="flex-box-end navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item ">
-                    <a class="nav-link active" aria-current="page" href="#main-portfolio">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#skill-column">SKILL</a>
                   </li>
                   <li class="nav-item flex-box-end">
-                    <a class="nav-link active" href="#skill-logo">skill</a>
+                    <a class="nav-link active" href="#project-section">PROJECT</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#project-main">Project</a>
+                    <a class="nav-link active" href="#story-column">ABOUT ME</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" aria-current="page" href="#last-section">ADDRESS</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" href="#"></a>
@@ -52,21 +54,27 @@
                 
               </div>
             </div>
+
+            
+              
+             
+            
           </nav>
-          
           
 
         <div id="main-portfolio">
             <div class="main-home">
               
               <canvas width="2880" height="558"></canvas>
-                <div class="main-home-text"><h1>안녕하세요!<br> 박호연입니다.</h1><br><br><br>
+                <div class="main-home-text"><h1>안녕하세요<br> 박호연입니다.</h1><br><br><br>
                   
                 <p>개발은 끊임없는 공부이자 취미라고 생각합니다.
                   저를 소개하겠습니다.
-                   
                 </p>
-                <a class="start-button" href="#project-main">시작하기 ↓</a>
+                <a class="start-button" href="#project-main">
+                  더 알아보기 ↓</a>
+
+               
 
                 
                 
@@ -83,96 +91,156 @@
             <div id="project-main">
 
 
-
+<div id="skill-column">
                 <div id="skill-logo">
-                    <h2>- SKILL & Curriculum -</h2><br>
+                 
+                    <h2>
+                      <a href="#skill-column"><i class="icon-style fas fa-link"></i></a> 
+                      SKILL & Curriculum</h2><br><br><br>
+                   
                     <img src="logo-img/html-logo.png" alt="">
-                    <img src="logo-img/css로고.png" alt="">
-                    <img src="logo-img/자바스크립트로고.png" alt="">
-                    <img src="logo-img/bootstrap-logo.png" alt="">
-                    <img src="logo-img/뷰로고.png" alt="">
-                    <img src="logo-img/대구ai스쿨.jpg" alt="">
-                    <img src="logo-img/아임웹 logo.png" alt="">
+                    <img src="logo-img/css.png" alt="">
+                    <img src="logo-img/bootstrap.png" alt="">
+                    <img src="logo-img/javascript.png" alt="">
+                    <img src="logo-img/ts.png" alt="">
+                    <img src="img/jquery.png" alt="">
+                    <img src="logo-img/vue.png" alt="">
+                    <img src="logo-img/aischool.jpg" alt="">
+                    <img src="logo-img/imweb.png" alt="">
+                    
                   </div>
       
+                </div>
 
-
-            <div>
+            <div class="">
 
 
             </div>
       
 
 
-              <ul class="project-top">
+              <ul id="project-section" class="project-top">
+                <h1> <a href="#project-section"><i class="icon-style fas fa-link"></i></a> PROJECT</h1>
 
             <li class="project-1">
-              <h3>- 카카오톡 -</h3>
+              <div class="project-text">
+              <h3>KAKAOTALK CLONE</h3>
+              <p>카카오톡의 HTML, CSS 를 구현한 카카오톡 클론입니다. <br>프론트엔드 개발 입문 첫 미니프로젝트입니다.<br>
+              CSS Animation, MediaQuery를 활용한 layout 등 <br>기초를 꼼꼼하게 다지며 시작했습니다.  </p>
+            </div>
               <ul class="project-slide">
                  
-                <li><img src="img/카카오톡클론-1.png" alt=""></li>
-              <li><img src="img/카카오톡클론-2.png" alt=""></li>
-              <li><img src="img/카카오톡클론-3.png" alt=""></li>
-              <li><img src="img/카카오톡클론-4.png" alt=""></li>
+                <li><img src="img/kakao-1.png" alt=""></li>
+              <li><img src="img/kakao-2.png" alt=""></li>
+              <li><img src="img/kakao-3.png" alt=""></li>
+              <li><img src="img/kakao-4.png" alt=""></li>
             
                   
               </ul>
             </li>
             <li class="project-2">
-              <h3>- 대구AI스쿨 -</h3>
+              <div class="project-text">
+              <h3>대구AI스쿨</h3>
+              <p>대구 ai스쿨은 대구시와 마이크로소프트의 협약으로 <br> 시작된 교육과정입니다.<br> 발전하는 ai기술과 웹 개발의 기초를 토대로 교육과정동안<br> 네이버, 트위치, 스타트업 기업의 웹사이트 약 16개이상을<br>  프로젝트형식으로 카피캣했습니다.</p>
+            </div>
               <ul class="project-slide">
                  
-                <li><img src="img/네이버-1.png" alt=""></li>
-              <li><img src="img/네이버-2.png" alt=""></li>
-              <li><img src="img/네이버-3.png" alt=""></li>
-              <li><img src="img/네이버-4.png" alt=""></li>
-              <li><img src="img/트위치-1.png" alt=""></li>
-              <li><img src="img/키즈가오.png" alt=""></li>
+                <li><img src="img/naver-1.png" alt=""></li>
+              <li><img src="img/naver-2.png" alt=""></li>
+              <li><img src="img/naver-3.png" alt=""></li>
+              <li><img src="img/naver-4.png" alt=""></li>
+              <li><img src="img/twitch.png" alt=""></li>
+              <li><img src="img/kizgao.png" alt=""></li>
               </ul>
             </li>
           </ul>
 
           <ul class="project-bottom">
             <li class="project-3">
-              <h3>- 유스더유스 홈페이지 -</h3>
+              <div class="project-text">
+              <h3>유스더유스 홈페이지</h3>
+              <p>대구 ai스쿨 커리큘럼 - 팀 프로젝트를 수행하며<br>
+              3인조 팀원과 함께한 첫 팀프로젝트입니다.<br>
+            실제 사진기업의 외주를 받아 기획부터<br>  수정, 기능구현, 호스팅까지 <br>
+          웹사이트의 뼈대를 웹빌더로 기능과 CSS를<br>  직접기입하여 완성했습니다.</p>
+        </div>
               <ul class="project-slide">
                  
-                <li><img src="img/유스더유스-1.png" alt=""></li>
-                <li><img src="img/유스더유스-2.png" alt=""></li>
-                <li><img src="img/유스더유스-3.png" alt=""></li>
-                <li><img src="img/유스더유스-4.png" alt=""></li>
-                <li><img src="img/유스더유스-5.png" alt=""></li>
+                <li><img src="img/youth-1.png" alt=""></li>
+                <li><img src="img/youth-2.png" alt=""></li>
+                <li><img src="img/youth-3.png" alt=""></li>
+                <li><img src="img/youth-4.png" alt=""></li>
+                <li><img src="img/youth-5.png" alt=""></li>
                   
               </ul>
               </li>
 
               <li class="project-4">
-                <h3>- 개인 프로젝트 -</h3>
+                <div class="project-text">
+                <h3>개인 프로젝트</h3>
+                
+                <p>교육과정 이외에 개인적으로 해본 프로젝트들입니다.<br>웹 프론트엔드 기반으로 혼자 프로젝트를 수행했습니다.</p>
+              </div>
                 <ul class="project-slide">
                  
-                <li><img src="img/쿠팡-1.png" alt=""></li>
-              <li><img src="img/파파고-1.png" alt=""></li>
+                <li><img src="img/coupang.png" alt=""></li>
+              <li><img src="img/papago.png" alt=""></li>
               <li><img src="img/mysql.png" alt=""></li>
-              <li><img src="img/카카오톡클론-4.png" alt=""></li>
-              <li><img src="img/카카오톡클론-2.png" alt=""></li>
-              <li><img src="img/카카오톡클론-2.png" alt=""></li>
+              <li><img src="#" alt=""></li>
+              <li><img src="#" alt=""></li>
+              <li><img src="#" alt=""></li>
                   
               </ul>
 
               
               </li>
+              
              
             </ul>
 
-            <div class="last-section">
+            <div id="story-column">
+              <h3 id="story-title" class="story-title"> <a href="#story-title"><i class="icon-style fas fa-link"></i></a> 
+                MY INTRODUCE</h3>
+              <div id="myStory">
+                
+                <div class="text-column flex-box-center">
+                  
+                  <div class="story-left">
+                    <img src="img/KakaoTalk_Photo_2021-09-29-15-45-58.jpeg" alt="">
+                    <h3>박호연</h3>
+                    <p> 1998 07.22 (O형)</p>
+                    
+
+                  </div>
+
+                  <div class="story-right">
+                    <p>저는 식품영양관련학과를 전공했습니다. 개인사정으로인해 군 제대 이후 학과를 중퇴하고,<br> 군 전역이후 일반가공기업에 들어가 1년여간 일했습니다.<br>
+                    그 후에 대구ai스쿨이라는 교육과정을 만나 성실함으로 이어진 좋은 결과로 수료했습니다.<br>
+                    
+                    저는 제 진로에대해 끊임없이 고민하고 드디어 프론트엔드 개발이란 길을 선택했습니다. <br>
+                    포기하지않는 근성은 개발스킬에 가미되어 성장할수있음을 말씀드리고싶습니다.
+                    </p>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div id="last-section" class="last-section">
+              <h1><a href="#last-section"><i class="icon-style fas fa-link"></i></a>address
+              </h1>
               <div class="section-text">
-            
-              <p><a href="https://github.com/mercuryPark">github</a></p>
+
+              
+              <p><a href="https://github.com/mercuryPark"><i class="fab fa-github"></i></a></p>
             </div>
               <div class="section-text-1">
              
-              <p><a href="mailto:qkrghdus1113@naver.com">Email</a>  </p>
+              <p><a href="mailto:qkrghdus1113@naver.com"><i class="far fa-paper-plane"></i></a>  </p>
             </div>
+
+            <p class="last-text">© 2021 - Template developed by Jacobo Martínez</p>
           
           </div>
 
@@ -196,16 +264,22 @@
 
 
 
-
+    <!-- vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
     
+    <!-- slick slide script -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <!-- awesome icon -->
+    <script src="https://kit.fontawesome.com/f34b1bfaad.js" crossorigin="anonymous"></script>
+
     <script src="main.js"></script>
+    
     <!-- <script src="slide.js"></script> -->
 
 

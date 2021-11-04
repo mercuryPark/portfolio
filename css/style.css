@@ -4,8 +4,12 @@
 
     box-sizing: border-box;
 
-    font-family: 'Nanum Myeongjo', serif;   
+  
+    font-weight: 800;
     
+}
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 ol,
@@ -32,10 +36,10 @@ textarea {
     outline: none;
 }
 
-img{
+/* img{
     width: 350px;
     height: 400px;
-}
+} */
 
 canvas{
     position: absolute;
@@ -50,7 +54,7 @@ canvas{
     margin-top:30px; 
     padding: 0; 
     text-align:center;
-    margin-left: -40px;
+    margin-left: 228px;
 } 
 
 .slick-dots li {
@@ -111,9 +115,35 @@ canvas{
     align-content: stretch;
 }
 
+.navbar {
+    position: fixed !important;
+
+    z-index:99999;
+    width: 100%;
+    box-shadow: 0 1px 0.3rem hsl(0deg 0% 80% / 80%);
+
+  
+
+}
+.collapse ul li a{
+  font-size: 20px;
+  color: #333333 !important;
+}
+
 .navbar-nav {
     width: 100%;
 
+}
+
+.home-arrow{
+    position: fixed;
+
+    right: 100px;
+
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    background-color: #000;
 }
 
 
@@ -124,6 +154,8 @@ canvas{
     position: relative;
     width: 100%;
     height: 2000px;
+
+   
 }
 
 #portfolio #main-portfolio {
@@ -134,6 +166,8 @@ canvas{
 
     position: relative;
     /* top: 70px; */
+
+   padding-top: 40px;
 
 }
 
@@ -149,28 +183,71 @@ canvas{
     position: relative;
     top: 100px;
     font-weight: 500;
+    font-size: 80px;
+    background-image: linear-gradient(
+135deg,#fff,#000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 #portfolio #main-portfolio .main-home .main-home-text {
     width: 100%;
     height: 500px;
     font-size: 30px;
-
+    font-weight: 300;
+    
     text-align: center;
 
+    background-image: linear-gradient(
+        135deg,#fff,#000);
+
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+            
+     font-family: 'Black Han Sans', sans-serif;
+
+}
+#portfolio #main-portfolio .main-home .main-home-text p{
+    font-family:'Noto Sans KR', sans-serif;;
 }
 
 .start-button{
+    opacity: 0.9;
     top: 30px;
   position: relative;
 
-  color: #000;
+  color: #fff;
+  background-color: #333333;
   text-decoration: none;
+  font-size: 15px;
+
+padding: 20px 30px;
+  border: 1px solid #000;
+  border-radius: 30px;
+
+  font-weight: 500;
+  -webkit-text-fill-color: #fff;
+  font-family:'Noto Sans KR', sans-serif;;
+/* 
+  -webkit-box-shadow: 5px 5px 15px -1px #000000; 
+    box-shadow: 5px 5px 15px -1px #000000; */
 }
 .start-button:hover {
-    color: #999;
+    opacity: 1;
+    color: #fff;
 }
 
+.icon-style{
+    position:relative;
+    right: 20px;
+    font-size: 50px;
+
+    color: #f2f2f2;
+
+    text-decoration: none;
+}
 
 
 
@@ -194,15 +271,26 @@ canvas{
 
    text-align: center;
 
-   background-color: #F6F9FC;
+   background-color: #e9c46a;
     
+}
+
+#project-main #skill-column{
+    width: 100%;
+    height: 100%;
+
+    padding: 100px;
+    background-color: #e76f51;
 }
 
 #project-main #skill-logo{
 width: 100%;
 /* height: 100%; */
 
-padding: 50px;
+padding: 100px;
+}
+#project-main #skill-logo h2{
+    margin-top: -100px;
 }
 #project-main #skill-logo img{
     width: 170px;
@@ -212,12 +300,45 @@ padding: 50px;
     border-radius: 100%;
     -webkit-box-shadow: 5px 5px 15px -1px #000000; 
     box-shadow: 5px 5px 15px -1px #000000;
+
+    position: relative;
+    transition: top linear 0.45s;
+    top:0;
+
+    background-color: #fff;
 }
+
+#project-main #skill-logo img:hover{
+    top: -20px;
+}
+
+#skill-logo h2{
+    font-size: 70px;
+    color: #fff;
+    font-weight: bold
+}
+
+
+
+
+
+
+
+
  #project-main .project-top{
 width: 100%;
 /* height: 50%; */
 
 margin-bottom: 30px;
+}
+#project-main .project-top h1{
+    margin-bottom: 100px;
+   font-weight: bold;
+   font-size: 70px;
+
+    color: #fff;
+
+    padding-top: 100px;
 }
 #project-main .project-bottom{
     width: 100%;
@@ -229,12 +350,22 @@ margin-bottom: 30px;
     /* display: block; */
     /* display: inline-block; */
     /* line-height: 400px; */
-    text-align: center;
+    /* text-align: center; */
     /* width: 100%; */
+    
     margin-bottom: 70px;
-    margin-left: 50px;
+    margin-left: 250px;
+
 
     /* border: solid 1px #000; */
+    border-radius: 20px;;
+    padding: 30px;
+    margin-right: 250px;
+
+    background-color: #fff;
+
+    -webkit-box-shadow: 5px 5px 20px -5px #000000; 
+box-shadow: 5px 5px 20px -5px #000000;
 }
 
 .project-1 h3,
@@ -243,6 +374,9 @@ margin-bottom: 30px;
 .project-4 h3{
 margin-right: 50px;
 margin-bottom: 50px;
+
+color: #000;
+font-size: 40px;
    }
 
 
@@ -250,9 +384,33 @@ margin-bottom: 50px;
 .project-2 .project-slide img,
 .project-3 .project-slide img,
 .project-4 .project-slide img{
-    border-radius: 20px;
-    -webkit-box-shadow: 5px 5px 9px -5px #000000; 
-box-shadow: 5px 5px 9px -5px #000000;
+    width: 350px;
+    height: 350px;
+    /* border: 1px solid #000; */
+    border-radius: 30px;
+    /* -webkit-box-shadow: 5px 5px 11px -1px #000000; 
+box-shadow: 5px 5px 7px -1px #000000; */
+padding: 10px;
+}
+
+.project-1 .project-text,
+.project-2 .project-text,
+.project-3 .project-text,
+.project-4 .project-text{
+    float:left;
+    text-align:left;
+
+    margin-right: 80px;
+
+    width: 400px;
+
+    
+}
+.project-1 .project-text p,
+.project-2 .project-text p,
+.project-3 .project-text p,
+.project-4 .project-text p{
+    font-family:'Noto Sans KR', sans-serif;;
 }
 
 #project-main ul{
@@ -261,25 +419,92 @@ height: 100%;
 
 }
 
-#project-main li{
+#project-main #project-1 li{
     /* width: 100%; */
-    /* height: 500px; */
+    height: 500px;
+    position: relative;
+    left: 50px;
+
 }
 
 
+/* story column */
+
+
+#story-column{
+    width: 100%;
+    height: 100%;
+    
+    padding: 10px;
+    margin-right: 20px;
+
+ 
+    
+
+    background-color: #2a9d8f;
+
+    
+    
+}
+
+
+#myStory{
+    /* width: 100%; */
+    height: 100%;
+    padding: 100px 0;
+
+    border-radius: 20px;
+   
+    margin:100px;
+
+    background-color: #fff;
+
+    -webkit-box-shadow: 5px 5px 20px -5px #000000; 
+box-shadow: 5px 5px 20px -5px #000000;
 
 
 
 
+}
+.story-title{
+    margin-top: 70px;
+    margin-bottom: 60px;
+    font-size:70px;
+    font-weight: bold;
+    color: #fff;
+
+    
+
+}
+
+#myStory .text-column{
+
+}
+#myStory .text-column .story-left{
+margin-right: 50px;
 
 
 
+}
+#myStory .text-column .story-left h3{
+    font-size: 50px;
+}
+
+#myStory .text-column .story-left img{
+width: 200px;
+height: 200px;
+border-radius: 100%;
+-webkit-box-shadow: 5px 5px 20px -5px #000000; 
+box-shadow: 5px 5px 20px -5px #000000;
+
+margin-bottom: 20px;
+
+}
 
 
-
-
-
-
+#myStory .text-column .story-right p{
+    font-family:'Noto Sans KR', sans-serif;
+}
 
 
 
@@ -304,10 +529,13 @@ height: 100%;
 /* last section */
 
 .last-section{
-    width: 100%;
-    height: 200px;
+position: relative;
 
-    background-color: #fff;
+    width: 100%;
+    height: 300px;
+
+    background-color: #333333;
+    /* opacity: 0.7; */
 
     
     display: flex;
@@ -323,30 +551,45 @@ height: 100%;
 .last-section .section-text{
     margin-right: 100px;
 
-    width: 150px;
-    height: 150px;
 
-    border: 1px solid #000;
-    border-radius: 100%;
+    font-size: 120px;
+    background-color: #333333;
+}
+.last-section .section-text i,
+.last-section .section-text-1 i{
+    position: relative;
+    font-size: 50px;
+    color: #fff;
+    top:0;
+    transition: top linear 0.45s;
+}
 
-    -webkit-box-shadow: 5px 5px 9px -5px #000000; 
-    box-shadow: 5px 5px 9px -5px #000000;
+.last-section .section-text i:hover,
+.last-section .section-text-1 i:hover{
+    /* font-size: 80px; */
+    color: #fff;
+
+   top: -10px;
 }
 
 .last-section .section-text-1{
     
-    width: 150px;
-    height: 150px;
+    /* width: 150px; */
+    /* height: 150px; */
 
-    border: 1px solid #000;
-    border-radius: 100%;
-
-    -webkit-box-shadow: 5px 5px 9px -5px #000000; 
-    box-shadow: 5px 5px 9px -5px #000000;
+    background-color: #333333;
 }
 
-.last-section h2{
-font-size: 30px;
+.last-section h1{
+    position: absolute;
+    top:10px;
+    font-weight: bold;
+    font-size: 70px;
+    color: #fff;
+
+    text-align: center;
+
+    
 }
 
 .last-section a,
@@ -374,5 +617,33 @@ font-size: 30px;
     height: 30px;
 
 } */
+
+.last-text{
+    position: absolute;
+    color: #7b7b7b;
+
+    font-size: 12px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

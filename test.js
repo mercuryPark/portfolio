@@ -1,3 +1,3 @@
 
 
-  $(document).ready(function(){ $('.slick').slick({ dots: true }); }); 
+  // $(document).ready(function(){ $('.slick').slick({ dots: true }); }); 
