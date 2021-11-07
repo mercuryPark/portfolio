@@ -1,1 +1,71 @@
-@media(ma)
+
+@media(max-width:1300px){
+
+.warning{
+    position: relative;
+   display:block;    
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 150px;
+    font-size: 1000px;
+    background-color: #fff;
+}
+.warning h1{
+    font-size: 100px;
+}
+
+#portfolio{
+display: none;
+
+
+}
+
+
+
+   
+
+    .project-1 .project-slide img,
+    .project-2 .project-slide img,
+    .project-3 .project-slide img,
+    .project-4 .project-slide img{
+       
+        width: 350px;
+        height: 350px;
+     
+        border-radius: 30px;
+       
+    padding: 10px;
+    }
+
+    .project-slide li{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	align-content: stretch;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
